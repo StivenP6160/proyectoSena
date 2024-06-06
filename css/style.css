@@ -1,158 +1,67 @@
-* {
-    box-sizing: border-box;
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --primary-color: #457b9d;
+    --secondary-color: #28a745;
+    --neutral-color: #F7F7F7;
+    --error-color: #dc3545;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+.body {
+    font-family: 'Roboto',sans-serif;
     margin: 0;
-    padding: 0;
-    font-family: sans-serif;
 }
-
-html {
- font-size: 62.5%;
-}
-body {
+.login {
     width: 100%;
     height: 100vh;
-    background-image: url(/image/fondo.jpeg);
-    background-size: cover;
+    display: grid;
+    place-items: center;
+    border-radius: 50% var(--neutral-color);
 }
-.cabezera {
-    width: 10rem;
-    height: 10rem;
-    margin: auto;
-    position: relative;
-    top: 10rem;
-    z-index: 99;
+.form-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+    border: 1px solid var(--primary-color);
+    border-radius: 20%;
+    padding: 30px;
 }
-img {
-    width: 100%;
-    background-color: #f5fedc;
-    border-radius: 50%;
-    box-shadow: 0px 0px 5px #00000050;
-}
-.cuerpo {
-    width: 35rem;
-    padding: 50px;
-    margin: auto;
-    position: relative;
-    top: 50px;
-    background-color: #74a6b8;
-    border-radius: 15px;
-    box-shadow: 0px 0px 5px #00bcd4;
-    z-index: 9;
-    text-align:center;
-}
-
-h1 {
-    text-align: center;
-    font-weight: 500;
-    font-size: 2.5rem;
-    padding: 20px 0px;
-    color: white;
-}
-input {
-    display: block;
-    padding: 1.3rem;
-    margin: 10px 5px 25px 5px;
-    min-width: 24.5rem;
-    background-color: #f6f6f6;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0px 0px 3px #00000050;
-    text-align: center;
-}
-input.submit {
-    background-color: rgb(77 129 171 / 81%);
-    color: #fff;
-    font-size: 1.5rem;
-    min-width: 150px;
-    margin: auto;
-}
-input.submit:hover {
-    background-color: rgb(21, 83, 134);
-}
-.loss {
-    text-align: center;
-    padding-top: 1.5rem;
-}
-h3 a {
-    color: white;
-    font-weight: 500;
-    text-decoration: none;
-}
-h3 a:hover {
-    background-color: rgb(21, 83, 134);
-    transition: 0.3s all;
-    text-decoration: underline;
-}
-input.text {
-    font-size: 1.5rem;
-    margin: auto;
-    min-width: auto;
-    text-align: center;
-    padding: 20px;
-}
-p {
-    font-size: 2rem;
-    text-align: center;
-    font-weight: 500;
-    padding: 15px 0px;
-    color: white;
-}
-nav {
-    max-width: 900px;
-    margin: auto;
-    background-color: #74a6b8;
-    font-size: 20px;
-    margin-top: 50px;
-    border-radius: 15px;
-    
-}
-.menu-horizontal {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-}
-.menu-horizontal > li > a {
-    display: block;
-    padding: 15px 20px;
-    color: white;
-    text-decoration: none;
-}
-.menu-horizontal > li:hover {
-    background-color: rgb(21, 83, 134);
-    border-radius: 15px;
-}
-.menu-vertical {
-    position: absolute;
+.logo {
+    width: 150px;
+    margin-bottom: 48px;
+    justify-self: center;
     display: none;
-    list-style: none;
-    width: 200px;
-    background-color: rgb(21, 83, 134);
-    border-radius: 15px;
 }
-.menu-horizontal li:hover .menu-vertical {
-    display: block;
+.title {
+    font-size: var(--lg);
+    margin-bottom: 12px;
+   text-align: center; 
 }
-.menu-vertical li:hover {
-    background-color: #74a6b8;
-    border-radius: 15px;
+.form {
+    display: flex;
+    flex-direction: column;
 }
-.menu-vertical li a {
-    display: block;
-    color: white;
-    padding: 15px 15px 15px 20px;
-    text-decoration: none;
+.label {
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 4px;
 }
-.cuerpo label {
-    font-size: 1.5rem;
+.input {
+    background-color: var(--neutral-color);
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 12px;
 }
-#razon {
-    min-height: 10rem;
-}
-.cabezera-nav {
-    width: 10rem;
-    height: 10rem;
-    margin: auto;
-    position: relative;
-    top: 10rem;
-    z-index: 99; 
+.submit {
+    color: var(--primary-color);
+    font-size: var(--md);
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 32px;
+    text-align: center;
 }

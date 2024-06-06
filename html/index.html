@@ -5,19 +5,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Inventario</title>
         <link rel="stylesheet" href="../css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <style>
+            @media (max-width: 640px) {
+                .logo {
+                    display: block;
+                }
+            }
+        </style>
     </head>
     <body>
-        <div class="cabezera">
-            <img src="../image/fondo.jpeg" alt="login image">
-        </div>
-        <div class="cuerpo">
-            <h1>Iniciar sesión</h1>
-            <form class="form" id="miFormulario" action="./pagina_principal.html">
-                <input type="text" name="User" placeholder="Usuario" required>
-                <input type="password" name="password" placeholder="contraseña" required>
-                <input type="submit" value="Iniciar sesión" class="submit">
-            </form>
-            <h3 class="loss"><a href="./recover.html">¿Olvidaste la contraseña?</a></h3>
+        <div class="login">
+            <div class="form-container">
+
+                <img src="../image/logo_salud.jpeg" alt="logo" class="logo">
+                <h1 class="title">Iniciar sesión</h1>
+
+                <form action="" class="form">
+                    <label for="User" class="label">Usuario</label>
+                    <input type="text" name="User" placeholder="User 1" required class="input">
+
+                    <label for="password" class="label">Contraseña</label>    
+                    <input type="password" name="password" placeholder="*********" required class="input">
+
+                    <input type="submit" value="Inicio" class="submit">
+                </form>
+                
+                <h3 class="loss"><a href="./recover.html">¿Olvidaste la contraseña?</a></h3>
+            </div>
         </div>
     </body>
 </html>
