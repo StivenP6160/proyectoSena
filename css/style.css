@@ -5,6 +5,7 @@
     --secondary-color: #C7C7C7;
     --neutral-color: #F7F7F7;
     --error-color: #dc3545;
+    --other-color: #0077b6;
     --sm: 14px;
     --md: 16px;
     --lg: 18px;
@@ -32,9 +33,11 @@ body {
 }
 .logo {
     width: 150px;
-    margin-bottom: 48px;
     justify-self: center;
+    margin-bottom: 20px;
     display: none;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px var(--primary-color);
 }
 .title {
     font-size: var(--lg);
@@ -75,4 +78,5 @@ body {
 .loss a {
     text-decoration: none;
     text-align: center;
+    color: var(--other-color);
 }
