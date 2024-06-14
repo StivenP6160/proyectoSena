@@ -3,24 +3,40 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Egresos</title>
+        <title>Egreso</title>
         <link rel="stylesheet" href="../css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <style>
+            @media (max-width: 640px) {
+                .logo {
+                    display: block;
+                }
+            }
+        </style>
     </head>
     <body>
-        <div class="cabezera">
-            <img src="../image/logo_salud.jpeg" alt="logo-salud">
-        </div>
-        <div class="cuerpo">
-            <h1>Salida de equipos dañados</h1>
-            <form action="">
-                <label for="">Equipo</label>
-                <input type="text" name="serie" placeholder="Serial">
-                <label for="">Fecha de salida</label>
-                <input type="date" name="salida" placeholder="Fecha de salida">
-                <label for="">Motivo de salida</label>
-                <input id="razon" type="text" name="motive">
-                <button type="submit">Enviar</button>
-            </form>
+        <div class="login">
+            <div class="form-container">
+
+                <img src="../image/logo_salud.jpeg" alt="logo" class="logo">
+                <h1 class="title">Salida de equipos</h1>
+
+                <form action="./main_page.html" class="form">
+
+                    <label for="" class="label">Equipo</label>
+                    <input type="text" name="serie" placeholder="Serial" class="input">
+
+                    <label for="" class="label">Fecha de salida</label>
+                    <input type="date" name="salida" placeholder="Fecha de salida" class="input">
+
+                    <label for="" class="label">Motivo de salida</label>
+                    <input id="razon" type="text" name="motive" class="input">
+
+                    <button type="submit" class="submit">Enviar</button>
+                </form>
+            </div>
         </div>
     </body>
 </html>

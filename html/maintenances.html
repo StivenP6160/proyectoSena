@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mantenimiento</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <style>
+            @media (max-width: 640px) {
+                .logo {
+                    display: block;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="login">
+            <div class="form-container">
+
+                <img src="../image/logo_salud.jpeg" alt="logo" class="logo">
+                <h1 class="title">Mantenimiento</h1>
+
+                <form action="./main_page.html" class="form">
+
+                    <div class="checkbox-grid">
+                        <label for="checkbox" class="label">Mantenimiento preventivo</label>
+                        <input type="checkbox" name="checkbox-mantenimiento" required class="input">
+
+                        <label for="checkbox" class="label">Mantenimiento correctivo</label>
+                        <input type="checkbox" name="checkbox-mantenimiento" required class="input">
+                    </div>
+
+                    <label for="ID" class="label">ID Mantenimiento</label>
+                    <input type="text" name="User" placeholder="xxxxxx" required class="input">
+
+                    <label for="ID-equipo" class="label">ID Equipo</label>    
+                    <input type="password" name="ID-equipo" placeholder="xxxxxx" required class="input">
+
+                    <label for="Date" class="label">Fecha del Mantenimiento</label>
+                    <input type="date" name="date" required class="input">
+
+                    <label for="Cost" class="label">Costo del Mantenimiento</label>
+                    <input type="text" name="Cost" required class="input">
+
+                    <label for="description" class="label label-description">Descripción del Mantenimiento</label>
+                    <input type="text" name="description" required class="input">
+
+                    <input type="submit" value="Guardar y envíar" class="submit">
+
+                </form>
+
+            </div>
+        </div>
+    </body>
+</html>

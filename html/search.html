@@ -3,20 +3,34 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lista de equipos</title>
+        <title>Busqueda</title>
         <link rel="stylesheet" href="../css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <style>
+            @media (max-width: 640px) {
+                .logo {
+                    display: block;
+                }
+            }
+        </style>
     </head>
     <body>
-        <div class="cabezera">
-            <img src="../image/logo_salud.jpeg" alt="logo-salud">
-        </div>
-        <div class="cuerpo">
-            <h1>Busqueda de equipos</h1>
-            <form action="">
-                <label for="">Serial</label>
-                <input type="search" name="serie">
-                <button type="submit">Buscar</button>
-            </form>
+        <div class="login">
+            <div class="form-container">
+
+                <img src="../image/logo_salud.jpeg" alt="logo" class="logo">
+                <h1 class="title">Busqueda</h1>
+
+                <form action="./main_page.html" class="form">
+
+                    <label for="" class="label">Serial</label>
+                    <input type="search" name="serie" class="input">
+                    
+                    <button type="submit" class="submit">Buscar</button>
+                </form>
+            </div>
         </div>
     </body>
 </html>

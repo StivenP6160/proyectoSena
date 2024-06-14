@@ -3,22 +3,35 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Nuevo informe</title>
+        <title>Reportes</title>
         <link rel="stylesheet" href="../css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <style>
+            @media (max-width: 640px) {
+                .logo {
+                    display: block;
+                }
+            }
+        </style>
     </head>
     <body>
-        <div class="cabezera">
-            <img src="../image/logo_salud.jpeg" alt="logo-salud">
-        </div>
-        <div class="cuerpo">
-            <h1>Nuevo informe</h1>
-            <form action="">
-                <label for="">Informe Detallado</label>
-                <input id="razon" type="text" name="informe">
-                <button type="submit">Agregar</button>
-                <button type="reset">Reinicio</button>
-                <a href="./pagina_principal.html"><button type="button">Finalizar</button></a>
-            </form>
+        <div class="login">
+            <div class="form-container">
+
+                <img src="../image/logo_salud.jpeg" alt="logo" class="logo">
+                <h1 class="title">Nuevo Informe</h1>
+
+                <form action="./main_page.html" class="form">
+                    <label for="new-report" class="label">Descripción del informe</label>
+                    <input type="text" name="new-report" required class="input">
+
+                    <input type="submit" value="Agregar" class="submit">
+                    <p class="new-equipment"><a href="./main_page.html">Guardar</a></p>
+
+                </form>
+            </div>
         </div>
     </body>
 </html>

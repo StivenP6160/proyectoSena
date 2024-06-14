@@ -3,17 +3,19 @@
     --black: #000000;
     --primary-color: #457b9d;
     --secondary-color: #C7C7C7;
-    --neutral-color: #F7F7F7;
+    --neutral-color: #e5e5e5;
     --error-color: #dc3545;
     --other-color: #0077b6;
     --sm: 14px;
     --md: 16px;
-    --lg: 18px;
+    --lg: 30px;
 }
 body {
     font-family: 'Roboto',sans-serif;
     margin: 0;
     color: var(--primary-color);
+    background-image: url(../image/fondo.jpg);
+    background-size: cover;
 }
 .login {
     width: 100%;
@@ -79,4 +81,65 @@ body {
     text-decoration: none;
     text-align: center;
     color: var(--other-color);
+}
+.new-user a, .new-equipment a {
+    text-decoration: none;
+    text-align: center;
+    color: var(--primary-color);
+}
+/*main paige*/
+nav {
+    max-width: 900px;
+    margin: 50px auto;
+}
+.nav-container {
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    padding-top: 10px;
+}
+.horizontal-currency {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.horizontal-currency > li > a {
+    text-decoration: none;
+    color: var(--other-color);
+}
+/* .horizontal-currency > li:hover {
+    background-color: var(--primary-color);
+    border-radius: 100px;   
+} */
+.vertical-menu {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+}
+.horizontal-currency li:hover .vertical-menu {
+    display: block;
+}
+.vertical-menu li a {
+    display: block;
+    color: var(--primary-color);
+    padding: 15px 15px 15px 15px;
+    text-decoration: none;
+}
+.checkbox-grid {
+    display: flex; 
+    justify-content: space-around; 
+    padding: 10px 0;
+}
+.container-logo {
+    text-align: center;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-equipment {
+    max-width: 200px; 
+    height: auto;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
 }
